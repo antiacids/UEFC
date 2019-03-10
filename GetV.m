@@ -6,7 +6,7 @@ UEFC = GetUEFC;
 g = UEFC.g;
 R = UEFC.R;
 
-V = ????
+V = sqrt(R*g*sqrt(N^2-1));
 
 
 
