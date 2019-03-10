@@ -20,8 +20,8 @@ e = UEFC.e0;
 CDi = (CL^2)/(pi*AR*e);
 
 % You need to include a drag coefficient increment for the payload (burrito)
-% somewhere here
-%CDpay = 0.2;
-CDpay = 0;
+% somewhere herex
+CDpay = 0.2*pi*.08^2/(4*S);
+
 % Total drag
 CD = CDfuse + CDp + CDi + CDpay;

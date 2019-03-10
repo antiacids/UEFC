@@ -4,10 +4,10 @@ UEFC = GetUEFC;
 % Loop over AR and S and determine max speed
 
 nAR = 41;
-ARvals = linspace(  5,  20, nAR);
+ARvals = linspace(  7,  14, nAR);
 
 nS = 41;
-Svals  = linspace(0.05, 0.15, nS);
+Svals  = linspace(0.2, 0.5, nS);
 
 Vmin = 1e6;
 Vmax = 0;
