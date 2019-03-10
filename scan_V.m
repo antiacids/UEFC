@@ -3,10 +3,10 @@ UEFC = GetUEFC;
 
 % Loop over AR and S and determine max speed
 
-nAR = 41;
-ARvals = linspace(  5,  20, nAR);
+nAR = 100;
+ARvals = linspace(  0,  20, nAR);
 
-nS = 41;
+nS = 100;
 Svals  = linspace(0.05, 0.15, nS);
 
 Vmin = 1e6;
@@ -30,10 +30,12 @@ for iAR = 1:nAR,
     fprintf('Completed %3.1f%% of AR,S scan\n',iAR/nAR*100);
 end
 
+%%
 figure(1);
 [C_V,h_V] = contour(AR,S,V,linspace(Vmin,Vmax,11));
 xlabel('AR'); ylabel('S (sq. m)');title('Flight speed (m/s)');
 clabel(C_V,h_V);
+xlim([4 10])
 
 figure(2);
 Nmax = max(max(N));
